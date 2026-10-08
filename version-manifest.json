@@ -3,6 +3,14 @@
   "node": "24.13.0",
   "npm": "11.6.2",
   "litesvm": "1.5.0",
+  "agave": {
+    "version": "3.1.8",
+    "sourceCommit": "2717084afeeb7baad4342468c27f528ef617a3cf",
+    "featureSet": 1620780344,
+    "releaseArchiveSha256": "e951bb8127c57460bc3ebca1671952e9b164e249d713fcebe2c125f70b8791e8",
+    "releaseUrl": "https://github.com/anza-xyz/agave/releases/download/v3.1.8/solana-release-x86_64-unknown-linux-gnu.tar.bz2",
+    "mode": "one fresh local ledger per SDK/scenario; verified private network namespace with only lo and no external routes"
+  },
   "platform": "linux-x64-gnu (WSL Ubuntu 22.04 on AMETHYST); CI Ubuntu 24.04",
   "clients": {
     "legacy": {
@@ -21,6 +29,7 @@
   "support": { "@solana/kit": "8.3.0", "@solana/sysvars": "8.0.0", "@solana/web3.js": "1.98.4" },
   "lockfile": "package-lock.json (all transitive versions and registry integrity hashes)",
   "programBinariesAndSource": "fixtures.json",
+  "hookSourceBuildInvestigation": "source-verification.json (incomplete; no independently rebuilt ELF)",
   "upstreamReviewedCommit": "385831f47aabd033a08a89a037a7b6ba3806c148",
   "pr1347Head": "9940b1894c832f11160a7bc98e5f0cb2af07bd14",
   "licenseOfNewCode": "MIT"

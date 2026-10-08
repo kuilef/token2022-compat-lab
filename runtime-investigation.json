@@ -1,0 +1,25 @@
+{
+  "checkedOn": "2026-10-08",
+  "runtime": "Agave 3.1.8, feature set 1620780344, WSL Ubuntu 22.04",
+  "listenerInvestigation": {
+    "source": "https://github.com/anza-xyz/agave/blob/2717084afeeb7baad4342468c27f528ef617a3cf/test-validator/src/lib.rs#L1034-L1045",
+    "observation": "Stock CLI's bind-address does not constrain its wildcard RPC/pubsub/faucet listeners. Early diagnostic runs used loopback RPC requests but were not in a private network namespace; those validators were stopped. Final runs require a verified namespace containing only lo and no external routes."
+  },
+  "kitV0Probe": {
+    "client": "@solana-program/token-2022@0.19.0 with @solana/kit@8.3.0",
+    "scenario": "existing-ata",
+    "messageVersion": 0,
+    "observed": "harness_error: submitted transaction not confirmed within 30 seconds",
+    "signature": "7sPq8SLGsTj54ZpYfgDWZhnK8bCJu1NviHu7tdzgatETGHCYRsUqzy9Jmw183iWKayhgyxhGyMMnwVjuPUDh1HC",
+    "getSignatureStatusesContextSlot": 77,
+    "getSignatureStatusesValue": [null],
+    "wireBytes": 476,
+    "canonicalReserializationIdentical": true,
+    "diagnosticSimulation": { "sigVerify": true, "commitment": "confirmed", "err": null, "hookCpiObserved": true },
+    "confirmedExecutionObserved": false,
+    "rootCause": "unresolved within the bounded investigation",
+    "countsAsScenarioSuccess": false
+  },
+  "finalFixtureChoice": "Use each released SDK's own builders and signing API with legacy-format messages on Agave. Keep Kit version 0 in the original LiteSVM run. Compare program state and error semantics, as authorized, without claiming transaction-format parity.",
+  "scope": "No claim that Kit v0 or Agave v0 support is generally broken; the unconfirmed local transport probe is retained as a limitation, not a Token-2022 finding."
+}

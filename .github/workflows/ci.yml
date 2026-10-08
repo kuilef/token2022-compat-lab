@@ -19,3 +19,14 @@ jobs:
       - run: npm run report
       - name: Verify deterministic observed report
         run: git diff --exit-code -- report.json
+      - name: Prepare official pinned Agave locally
+        run: bash scripts/prepare-agave.sh
+      - name: Run all eight scenarios on fresh Agave ledgers
+        run: npm run agave
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: observed-runtime-reports
+          path: |
+            report.json
+            agave-report.json
+          if-no-files-found: error

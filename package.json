@@ -9,7 +9,8 @@
     "test": "node --test test/*.test.mjs",
     "lint": "eslint .",
     "check": "npm run lint && npm test",
-    "report": "node src/run.mjs"
+    "report": "node src/run.mjs",
+    "agave": "bash scripts/run-agave-isolated.sh"
   },
   "dependencies": {
     "@solana/spl-token": "0.4.15",
