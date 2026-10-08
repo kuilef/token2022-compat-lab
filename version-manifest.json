@@ -1,0 +1,27 @@
+{
+  "checkedOn": "2026-10-08",
+  "node": "24.13.0",
+  "npm": "11.6.2",
+  "litesvm": "1.5.0",
+  "platform": "linux-x64-gnu (WSL Ubuntu 22.04 on AMETHYST); CI Ubuntu 24.04",
+  "clients": {
+    "legacy": {
+      "package": "@solana/spl-token",
+      "version": "0.4.15",
+      "sourceRef": "js-legacy@v0.4.15",
+      "resolverSourceGitBlobSha1": "230af7208a5744d39543fa8931ad43137935971b"
+    },
+    "kit": {
+      "package": "@solana-program/token-2022",
+      "version": "0.19.0",
+      "sourceRef": "js@v0.19.0",
+      "resolverSourceGitBlobSha1": "824e9314a6d1c12e593b68183b610330c7616551"
+    }
+  },
+  "support": { "@solana/kit": "8.3.0", "@solana/sysvars": "8.0.0", "@solana/web3.js": "1.98.4" },
+  "lockfile": "package-lock.json (all transitive versions and registry integrity hashes)",
+  "programBinariesAndSource": "fixtures.json",
+  "upstreamReviewedCommit": "385831f47aabd033a08a89a037a7b6ba3806c148",
+  "pr1347Head": "9940b1894c832f11160a7bc98e5f0cb2af07bd14",
+  "licenseOfNewCode": "MIT"
+}
