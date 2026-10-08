@@ -11,3 +11,4 @@ cd "$stage"
 export PATH="$PWD/.tools/node/bin:$PATH"
 "$@"
 if [[ -f report.json ]]; then cp report.json "$origin/report.json"; fi
+if [[ -f agave-report.json ]]; then cp agave-report.json "$origin/agave-report.json"; fi

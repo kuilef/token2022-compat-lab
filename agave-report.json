@@ -1,0 +1,1262 @@
+{
+  "schemaVersion": 1,
+  "synthetic": true,
+  "cluster": "loopback-only local Agave, one fresh ledger per run",
+  "runtime": {
+    "node": "v24.13.0",
+    "agave": "3.1.8",
+    "sourceCommit": "2717084afeeb7baad4342468c27f528ef617a3cf",
+    "isolation": {
+      "privateNetworkNamespaceVerified": true,
+      "interfaces": [
+        "lo"
+      ],
+      "externalRoutes": [],
+      "hostNetworkChanged": false
+    },
+    "releaseArchiveSha256": "e951bb8127c57460bc3ebca1671952e9b164e249d713fcebe2c125f70b8791e8",
+    "validatorBinarySha256": "a3d04c67ba444767efe00463a592d72d1eecea1915dd0e1e62cba49a88e017a5",
+    "featureSet": 1620780344,
+    "token2022": "11.0.0",
+    "transactionFormat": "legacy messages for both SDKs; Kit builds and signs its own message",
+    "legacyClient": "@solana/spl-token@0.4.15",
+    "kitClient": "@solana-program/token-2022@0.19.0",
+    "lockfileSha256": "4d099e5ef0d50f70240d94476a96c86d5c4a922ef1d9bd9abfde6d19a8da38a5"
+  },
+  "results": [
+    {
+      "validator": {
+        "feature-set": 1620780344,
+        "solana-core": "3.1.8"
+      },
+      "loadedProgramHashes": {
+        "token2022": "9bbf90b30e06778ca0feca100b29f0eeb9be576ae024f6323cc207308f51a5d1",
+        "hook": "b82d95a35b0460721c253c39874d3d4932bcb5c75bbb975966025586bab4ced2"
+      },
+      "executedTransactionSignature": "2dszKpTzAk3syk9U1ML6otThok9zzB1eN9y3si4ZS1xSMpLrfyZgMR3f9f2mCyaMFk5UA91kBaLdM5UmhUwg6A5Y",
+      "rpcTransactionError": null,
+      "client": "legacy",
+      "scenario": "existing-ata",
+      "outcome": "success",
+      "expected": "success",
+      "before": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": {
+          "address": "2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "72fba9386fddf02e0a649f0ddfa7ed376134fdcc6bca3cf705efd4c68805b894",
+          "dataLength": 175,
+          "amount": "0",
+          "tokenOwner": "8nD3mH2FKoePXtBkQcWvkWcrNtkUesT2sbT6oQx7ybMA",
+          "transferring": false
+        },
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "after": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "b853e7a9def6011608814d9fbe87e0b10f294ad23785cd0b686879acdd6e42d9",
+          "dataLength": 175,
+          "amount": "60",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": {
+          "address": "2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "238befb452be9aba3f68b78c94961184345f9200712db08009c7b2fcd637ba77",
+          "dataLength": 175,
+          "amount": "40",
+          "tokenOwner": "8nD3mH2FKoePXtBkQcWvkWcrNtkUesT2sbT6oQx7ybMA",
+          "transferring": false
+        },
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "error": null,
+      "reads": [
+        {
+          "client": "legacy",
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "exists": true
+        },
+        {
+          "client": "legacy",
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "exists": true
+        },
+        {
+          "client": "legacy",
+          "address": "2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr",
+          "exists": true
+        }
+      ],
+      "logs": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb invoke [2]",
+        "Program log: Instruction: Execute",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb consumed 6896 of 189372 compute units",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 18239 of 200000 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success"
+      ],
+      "transactionSubmitted": true,
+      "ataInstructionPrepared": false,
+      "resolvedExtraAccount": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+      "hookCpiObserved": true,
+      "ataCreationObserved": false,
+      "rollbackVerified": false
+    },
+    {
+      "validator": {
+        "feature-set": 1620780344,
+        "solana-core": "3.1.8"
+      },
+      "loadedProgramHashes": {
+        "token2022": "9bbf90b30e06778ca0feca100b29f0eeb9be576ae024f6323cc207308f51a5d1",
+        "hook": "b82d95a35b0460721c253c39874d3d4932bcb5c75bbb975966025586bab4ced2"
+      },
+      "executedTransactionSignature": null,
+      "rpcTransactionError": null,
+      "client": "legacy",
+      "scenario": "missing-ata-baseline",
+      "outcome": "resolver_failure",
+      "expected": "resolver_failure",
+      "before": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": null,
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "after": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": null,
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "error": {
+        "name": "TokenTransferHookAccountDataNotFound",
+        "message": "TokenTransferHookAccountDataNotFound"
+      },
+      "reads": [
+        {
+          "client": "legacy",
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "exists": true
+        },
+        {
+          "client": "legacy",
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "exists": true
+        },
+        {
+          "client": "legacy",
+          "address": "2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr",
+          "exists": false
+        }
+      ],
+      "logs": [],
+      "transactionSubmitted": false,
+      "ataInstructionPrepared": true,
+      "resolvedExtraAccount": null,
+      "hookCpiObserved": false,
+      "ataCreationObserved": false,
+      "rollbackVerified": false
+    },
+    {
+      "validator": {
+        "feature-set": 1620780344,
+        "solana-core": "3.1.8"
+      },
+      "loadedProgramHashes": {
+        "token2022": "9bbf90b30e06778ca0feca100b29f0eeb9be576ae024f6323cc207308f51a5d1",
+        "hook": "b82d95a35b0460721c253c39874d3d4932bcb5c75bbb975966025586bab4ced2"
+      },
+      "executedTransactionSignature": "Sq9fTYJNSWNfwhx7gX92qjydeUHS48zVUfeNV3GHjnFFYRwBh9a7cD2FJor1H79vTkxv5dDbYNKEiCtXJiiWdJj",
+      "rpcTransactionError": null,
+      "client": "legacy",
+      "scenario": "atomic-workaround",
+      "outcome": "success",
+      "expected": "success",
+      "before": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": null,
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "after": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "b853e7a9def6011608814d9fbe87e0b10f294ad23785cd0b686879acdd6e42d9",
+          "dataLength": 175,
+          "amount": "60",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": {
+          "address": "2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "238befb452be9aba3f68b78c94961184345f9200712db08009c7b2fcd637ba77",
+          "dataLength": 175,
+          "amount": "40",
+          "tokenOwner": "8nD3mH2FKoePXtBkQcWvkWcrNtkUesT2sbT6oQx7ybMA",
+          "transferring": false
+        },
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "error": null,
+      "reads": [],
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1420 of 394659 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb rwAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 388417 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2434 of 385345 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17393 of 400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb invoke [2]",
+        "Program log: Instruction: Execute",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb consumed 6896 of 371979 compute units",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 18239 of 382607 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success"
+      ],
+      "transactionSubmitted": true,
+      "ataInstructionPrepared": true,
+      "resolvedExtraAccount": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+      "hookCpiObserved": true,
+      "ataCreationObserved": true,
+      "rollbackVerified": false
+    },
+    {
+      "validator": {
+        "feature-set": 1620780344,
+        "solana-core": "3.1.8"
+      },
+      "loadedProgramHashes": {
+        "token2022": "9bbf90b30e06778ca0feca100b29f0eeb9be576ae024f6323cc207308f51a5d1",
+        "hook": "b82d95a35b0460721c253c39874d3d4932bcb5c75bbb975966025586bab4ced2"
+      },
+      "executedTransactionSignature": "qx1YPisFLKadVaeThPfdEspTrQ3LibWtVkQg7JKt2JuJxt3ZitTZp4V8VvF9tg6eDPWcBKAYgThQAYNyX8cC91W",
+      "rpcTransactionError": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2724315840
+          }
+        ]
+      },
+      "client": "legacy",
+      "scenario": "wrong-extra-rollback",
+      "outcome": "runtime_rejection",
+      "expected": "runtime_rejection",
+      "before": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": null,
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "after": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": null,
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "error": {
+        "name": "TransactionError",
+        "message": "InstructionError { index: 1, error: Custom { code: 2724315840 } }"
+      },
+      "reads": [],
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1420 of 394659 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb rwAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 388417 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2434 of 385345 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17393 of 400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Unknown",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 9474 of 382607 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0xa261c2c0"
+      ],
+      "transactionSubmitted": true,
+      "ataInstructionPrepared": true,
+      "resolvedExtraAccount": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+      "hookCpiObserved": false,
+      "ataCreationObserved": true,
+      "rollbackVerified": true
+    },
+    {
+      "validator": {
+        "feature-set": 1620780344,
+        "solana-core": "3.1.8"
+      },
+      "loadedProgramHashes": {
+        "token2022": "9bbf90b30e06778ca0feca100b29f0eeb9be576ae024f6323cc207308f51a5d1",
+        "hook": "b82d95a35b0460721c253c39874d3d4932bcb5c75bbb975966025586bab4ced2"
+      },
+      "executedTransactionSignature": "54kN3S3qsZYtpfj3ftc8up6XXYyFqwgnLLVibHMbTZYf5M8DRdRfD6QFJ3LdHWS9fjAH83NAzmAhw6cDuNsn2RPr",
+      "rpcTransactionError": null,
+      "client": "kit",
+      "scenario": "existing-ata",
+      "outcome": "success",
+      "expected": "success",
+      "before": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": {
+          "address": "2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "72fba9386fddf02e0a649f0ddfa7ed376134fdcc6bca3cf705efd4c68805b894",
+          "dataLength": 175,
+          "amount": "0",
+          "tokenOwner": "8nD3mH2FKoePXtBkQcWvkWcrNtkUesT2sbT6oQx7ybMA",
+          "transferring": false
+        },
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "after": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "b853e7a9def6011608814d9fbe87e0b10f294ad23785cd0b686879acdd6e42d9",
+          "dataLength": 175,
+          "amount": "60",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": {
+          "address": "2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "238befb452be9aba3f68b78c94961184345f9200712db08009c7b2fcd637ba77",
+          "dataLength": 175,
+          "amount": "40",
+          "tokenOwner": "8nD3mH2FKoePXtBkQcWvkWcrNtkUesT2sbT6oQx7ybMA",
+          "transferring": false
+        },
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "error": null,
+      "reads": [
+        {
+          "client": "kit",
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "exists": true
+        },
+        {
+          "client": "kit",
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "exists": true
+        },
+        {
+          "client": "kit",
+          "address": "2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr",
+          "exists": true
+        }
+      ],
+      "logs": [
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb invoke [2]",
+        "Program log: Instruction: Execute",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb consumed 6896 of 189372 compute units",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 18239 of 200000 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success"
+      ],
+      "transactionSubmitted": true,
+      "ataInstructionPrepared": false,
+      "resolvedExtraAccount": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+      "hookCpiObserved": true,
+      "ataCreationObserved": false,
+      "rollbackVerified": false
+    },
+    {
+      "validator": {
+        "feature-set": 1620780344,
+        "solana-core": "3.1.8"
+      },
+      "loadedProgramHashes": {
+        "token2022": "9bbf90b30e06778ca0feca100b29f0eeb9be576ae024f6323cc207308f51a5d1",
+        "hook": "b82d95a35b0460721c253c39874d3d4932bcb5c75bbb975966025586bab4ced2"
+      },
+      "executedTransactionSignature": null,
+      "rpcTransactionError": null,
+      "client": "kit",
+      "scenario": "missing-ata-baseline",
+      "outcome": "resolver_failure",
+      "expected": "resolver_failure",
+      "before": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": null,
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "after": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": null,
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "error": {
+        "name": "Error",
+        "message": "Invalid transfer hook seed: account 2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr required by an account-data seed was not found."
+      },
+      "reads": [
+        {
+          "client": "kit",
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "exists": true
+        },
+        {
+          "client": "kit",
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "exists": true
+        },
+        {
+          "client": "kit",
+          "address": "2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr",
+          "exists": false
+        }
+      ],
+      "logs": [],
+      "transactionSubmitted": false,
+      "ataInstructionPrepared": true,
+      "resolvedExtraAccount": null,
+      "hookCpiObserved": false,
+      "ataCreationObserved": false,
+      "rollbackVerified": false
+    },
+    {
+      "validator": {
+        "feature-set": 1620780344,
+        "solana-core": "3.1.8"
+      },
+      "loadedProgramHashes": {
+        "token2022": "9bbf90b30e06778ca0feca100b29f0eeb9be576ae024f6323cc207308f51a5d1",
+        "hook": "b82d95a35b0460721c253c39874d3d4932bcb5c75bbb975966025586bab4ced2"
+      },
+      "executedTransactionSignature": "4xFtbtjKEuHJYuVNJDjoRjv1caf9mDXoP6PBBnRUrpw3sFC4cHPDu6NmzgLohWedqepuaf8sSNUyZGs4jaHJXVK8",
+      "rpcTransactionError": null,
+      "client": "kit",
+      "scenario": "atomic-workaround",
+      "outcome": "success",
+      "expected": "success",
+      "before": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": null,
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "after": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "b853e7a9def6011608814d9fbe87e0b10f294ad23785cd0b686879acdd6e42d9",
+          "dataLength": 175,
+          "amount": "60",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": {
+          "address": "2fQ66wnAWvCLpZQy7j715T4jghUVuYA2vfHHUV9jQUTr",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "238befb452be9aba3f68b78c94961184345f9200712db08009c7b2fcd637ba77",
+          "dataLength": 175,
+          "amount": "40",
+          "tokenOwner": "8nD3mH2FKoePXtBkQcWvkWcrNtkUesT2sbT6oQx7ybMA",
+          "transferring": false
+        },
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "error": null,
+      "reads": [],
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1420 of 394659 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb rwAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 388417 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2434 of 385345 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17393 of 400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: TransferChecked",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb invoke [2]",
+        "Program log: Instruction: Execute",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb consumed 6896 of 371979 compute units",
+        "Program TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 18239 of 382607 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success"
+      ],
+      "transactionSubmitted": true,
+      "ataInstructionPrepared": true,
+      "resolvedExtraAccount": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+      "hookCpiObserved": true,
+      "ataCreationObserved": true,
+      "rollbackVerified": false
+    },
+    {
+      "validator": {
+        "feature-set": 1620780344,
+        "solana-core": "3.1.8"
+      },
+      "loadedProgramHashes": {
+        "token2022": "9bbf90b30e06778ca0feca100b29f0eeb9be576ae024f6323cc207308f51a5d1",
+        "hook": "b82d95a35b0460721c253c39874d3d4932bcb5c75bbb975966025586bab4ced2"
+      },
+      "executedTransactionSignature": "h2r7dhy6zMtVa8VF7yHpmm3hWy2VmFyU1ZMZ6UZqvczNSQq8EMLFjWVvhFAtMiK3zveuHg79DoTMTvmnH6MkPnX",
+      "rpcTransactionError": {
+        "InstructionError": [
+          1,
+          {
+            "Custom": 2724315840
+          }
+        ]
+      },
+      "client": "kit",
+      "scenario": "wrong-extra-rollback",
+      "outcome": "runtime_rejection",
+      "expected": "runtime_rejection",
+      "before": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": null,
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "after": {
+        "source": {
+          "address": "A6neXKmESbJcEdyeyz5VyLumr2aR16mQLnvjZ8GwPnpD",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2108880",
+          "dataHash": "47bc1bfc13fc5dc1feb77984f9c8d8338c142a7c890da9b90f4bcebbfb81060c",
+          "dataLength": 175,
+          "amount": "100",
+          "tokenOwner": "iAPU7sgfcFTB1RsvSN1AATru9NiWD3cMwpDJY2DzabY",
+          "transferring": false
+        },
+        "destination": null,
+        "mint": {
+          "address": "B2zuebQpqF7VKRmWsMypno72iEYy3Fu3G8Y4o8UmyWPa",
+          "owner": "TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb",
+          "lamports": "2519520",
+          "dataHash": "4e86b480e2858be265b360b661500cc6ee0452aa555133a946e44cc7945a0038",
+          "dataLength": 234
+        },
+        "validation": {
+          "address": "3s9Y3asuvitStR82YHdWi3KwVh71dZPthVA7HaT15wCp",
+          "owner": "TokenHookExampLe8smaVNrxTBezWTRbEwxwb1Zykrb",
+          "lamports": "10000000",
+          "dataHash": "ad67a82ab2f3b7e1690bd9ee242a9ede19ae45b206fb554add1621b6b897d548",
+          "dataLength": 51
+        },
+        "extra": {
+          "address": "CVF4qcHSWf98Q6qBxxKdrYSYNA3d3FzqN1jqVFYhqZ4e",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        },
+        "wrongExtra": {
+          "address": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+          "owner": "11111111111111111111111111111111",
+          "lamports": "1000000",
+          "dataHash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "dataLength": 0
+        }
+      },
+      "error": {
+        "name": "TransactionError",
+        "message": "InstructionError { index: 1, error: Custom { code: 2724315840 } }"
+      },
+      "reads": [],
+      "logs": [
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL invoke [1]",
+        "Program log: CreateIdempotent",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: GetAccountDataSize",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 1420 of 394659 compute units",
+        "Program return: TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb rwAAAAAAAAA=",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program 11111111111111111111111111111111 invoke [2]",
+        "Program 11111111111111111111111111111111 success",
+        "Program log: Initialize the associated token account",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeImmutableOwner",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 736 of 388417 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [2]",
+        "Program log: Instruction: InitializeAccount3",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 2434 of 385345 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb success",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL consumed 17393 of 400000 compute units",
+        "Program ATokenGPvbdGVxr1b2hvZbsiqW5xWH25efTNsLJA8knL success",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb invoke [1]",
+        "Program log: Instruction: TransferChecked",
+        "Program log: Error: Unknown",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb consumed 9474 of 382607 compute units",
+        "Program TokenzQdBNbLqP5VEhdkAS6EPFLC1PHnBqCXEpPxuEb failed: custom program error: 0xa261c2c0"
+      ],
+      "transactionSubmitted": true,
+      "ataInstructionPrepared": true,
+      "resolvedExtraAccount": "Bpas2EPiZLgY4AT7kc1tqcQjbZGwaku8qMMCDZ6kGEx3",
+      "hookCpiObserved": false,
+      "ataCreationObserved": true,
+      "rollbackVerified": true
+    }
+  ],
+  "comparisons": [
+    {
+      "scenario": "existing-ata",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    },
+    {
+      "scenario": "missing-ata-baseline",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    },
+    {
+      "scenario": "atomic-workaround",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    },
+    {
+      "scenario": "wrong-extra-rollback",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    }
+  ],
+  "runtimeComparisons": [
+    {
+      "client": "legacy",
+      "scenario": "existing-ata",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    },
+    {
+      "client": "legacy",
+      "scenario": "missing-ata-baseline",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    },
+    {
+      "client": "legacy",
+      "scenario": "atomic-workaround",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    },
+    {
+      "client": "legacy",
+      "scenario": "wrong-extra-rollback",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    },
+    {
+      "client": "kit",
+      "scenario": "existing-ata",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    },
+    {
+      "client": "kit",
+      "scenario": "missing-ata-baseline",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    },
+    {
+      "client": "kit",
+      "scenario": "atomic-workaround",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    },
+    {
+      "client": "kit",
+      "scenario": "wrong-extra-rollback",
+      "initialStatesEqual": true,
+      "finalStatesEqual": true,
+      "outcomesEqual": true,
+      "errorSemanticsEqual": true
+    }
+  ],
+  "caveats": [
+    "Only synthetic accounts and loopback RPC; no external cluster or remote account cloning.",
+    "Stock Agave RPC/pubsub/faucet bind wildcard addresses; a verified private network namespace containing only lo confines every listener. No host networking settings are modified.",
+    "Submitted transactions use skipPreflight=true; outcomes and logs come from confirmed getTransaction metadata.",
+    "Failed ATA-create-plus-transfer transaction is actually submitted and its tracked state is compared before/after; payer fees excluded.",
+    "Transaction signatures, ledger slots and consumed compute units can vary; semantic assertions determine success.",
+    "Initial Kit v0 transport probe timed out without a signature status despite successful diagnostic simulation; cause unresolved. Final Agave scenarios use legacy-format messages; this is not v0 format parity coverage.",
+    "Loaded ELF hashes are checked by reading actual validator program/program-data accounts.",
+    "Exact hook source-build correspondence remains unverified; see source-verification.json."
+  ]
+}
