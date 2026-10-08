@@ -1,0 +1,18 @@
+{
+  "checkedOn": "2026-10-08",
+  "codeCommit": "313a1b62efd7f645bbebd0bf873a16c83e73d92d",
+  "runner": "GitHub-hosted ubuntu-24.04",
+  "status": "blocked_before_agave_start",
+  "terminalRuns": [
+    { "event": "push", "conclusion": "failure", "url": "https://github.com/kuilef/token2022-compat-lab/actions/runs/37843825440" },
+    { "event": "pull_request", "conclusion": "failure", "url": "https://github.com/kuilef/token2022-compat-lab/actions/runs/37843877751" }
+  ],
+  "passed": ["npm ci from pinned lockfile", "pinned program download/hash verification", "lint", "all eight LiteSVM tests", "LiteSVM observed report", "unchanged deterministic report check", "official Agave archive/hash preparation"],
+  "failedStep": "npm run agave: private user/network namespace creation",
+  "exactError": "unshare: write failed /proc/self/uid_map: Operation not permitted",
+  "agaveScenariosExecutedInCI": 0,
+  "localAgaveScenariosExecutedAndPassed": 8,
+  "localEvidence": "agave-report.json",
+  "decision": "Preserve fail-closed isolation and the draft PR. Do not use sudo, change sysctl/AppArmor/firewall, add privileges or run the validator on host networking to make CI pass.",
+  "minimalFutureStep": "Run the unchanged workflow on an approved runner where unprivileged user/network namespaces are already supported. Until then, local Agave conformance is verified, CI Agave conformance is blocked, and the PR should remain draft."
+}
